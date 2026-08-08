@@ -1,0 +1,23 @@
+PLANT HEALTH INTELLIGENCE
+=========================
+
+Validation Images: 6683
+Validation Accuracy: 85.38%
+
+                                      precision    recall  f1-score   support
+
+                      Bacterial_spot     0.9006    0.8292    0.8634       732
+                        Early_blight     0.9490    0.5210    0.6727       643
+                         Late_blight     0.7584    0.9394    0.8393       792
+                           Leaf_Mold     0.8768    0.8863    0.8816       739
+                  Septoria_leaf_spot     0.7348    0.8767    0.7995       746
+Spider_mites Two-spotted_spider_mite     0.7748    0.9333    0.8467       435
+                         Target_Spot     0.7309    0.9212    0.8151       457
+       Tomato_Yellow_Leaf_Curl_Virus     0.9872    0.9277    0.9565       498
+                 Tomato_mosaic_virus     0.9935    0.7894    0.8798       584
+                             healthy     0.9688    0.9255    0.9466       805
+                      powdery_mildew     0.9114    0.8571    0.8834       252
+
+                            accuracy                         0.8538      6683
+                           macro avg     0.8715    0.8552    0.8531      6683
+                        weighted avg     0.8707    0.8538    0.8518      6683
