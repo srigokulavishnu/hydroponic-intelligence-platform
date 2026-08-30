@@ -16,3 +16,6 @@ venv/
 
 # Data
 data/
+
+dataset/
+models/plant-health-intelligence/dataset/
