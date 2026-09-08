@@ -1,0 +1,100 @@
+2026-09-08 18:37:25,066 - INFO - Application startup.
+2026-09-08 18:37:25,066 - INFO - Starting Data Manager iteration...
+2026-09-08 18:37:25,098 - INFO - Updated sensor master dataset: 55 total rows.
+2026-09-08 18:37:25,100 - INFO - Discovered 4 camera captures total.
+2026-09-08 18:37:25,100 - INFO - Processing new capture: S01_C01_20260908_162217
+2026-09-08 18:37:25,119 - INFO - Processing new capture: S01_C01_20260908_162219
+2026-09-08 18:37:25,128 - INFO - Processing new capture: S01_C01_20260908_162220
+2026-09-08 18:37:25,137 - INFO - Processing new capture: S01_C01_20260908_162221
+2026-09-08 18:37:25,146 - INFO - ============================================
+2026-09-08 18:37:25,147 - INFO - DATA MANAGER SUMMARY
+2026-09-08 18:37:25,147 - INFO - ============================================
+2026-09-08 18:37:25,147 - INFO - Sensor observations processed: 55
+2026-09-08 18:37:25,147 - INFO - Camera captures discovered: 4
+2026-09-08 18:37:25,147 - INFO - Camera captures processed: 4
+2026-09-08 18:37:25,147 - INFO - Plant images processed: 196
+2026-09-08 18:37:25,147 - INFO - Sensor matches: 0
+2026-09-08 18:37:25,147 - INFO - Sensor unmatched: 196
+2026-09-08 18:37:25,147 - INFO - Duplicate captures skipped: 0
+2026-09-08 18:37:25,147 - INFO - ============================================
+2026-09-08 18:37:25,147 - INFO - Application shutdown.
+2026-09-08 18:38:29,443 - INFO - Application startup.
+2026-09-08 18:38:29,444 - INFO - Starting Data Manager iteration...
+2026-09-08 18:38:29,452 - INFO - Updated sensor master dataset: 55 total rows.
+2026-09-08 18:38:29,453 - INFO - Discovered 4 camera captures total.
+2026-09-08 18:38:29,453 - INFO - ============================================
+2026-09-08 18:38:29,453 - INFO - DATA MANAGER SUMMARY
+2026-09-08 18:38:29,454 - INFO - ============================================
+2026-09-08 18:38:29,454 - INFO - Sensor observations processed: 55
+2026-09-08 18:38:29,454 - INFO - Camera captures discovered: 4
+2026-09-08 18:38:29,454 - INFO - Camera captures processed: 0
+2026-09-08 18:38:29,454 - INFO - Plant images processed: 0
+2026-09-08 18:38:29,454 - INFO - Sensor matches: 0
+2026-09-08 18:38:29,454 - INFO - Sensor unmatched: 0
+2026-09-08 18:38:29,454 - INFO - Duplicate captures skipped: 4
+2026-09-08 18:38:29,454 - INFO - ============================================
+2026-09-08 18:38:29,454 - INFO - Application shutdown.
+2026-09-08 19:04:11,498 - INFO - Application startup.
+2026-09-08 19:04:11,529 - INFO - Application shutdown.
+2026-09-08 19:09:20,505 - INFO - Application startup.
+2026-09-08 19:09:20,505 - INFO - Starting Data Manager iteration...
+2026-09-08 19:09:20,526 - INFO - Updated sensor master dataset: 55 total rows.
+2026-09-08 19:09:20,529 - INFO - Discovered 4 camera captures total.
+2026-09-08 19:09:20,529 - INFO - ============================================
+2026-09-08 19:09:20,529 - INFO - DATA MANAGER SUMMARY
+2026-09-08 19:09:20,529 - INFO - ============================================
+2026-09-08 19:09:20,530 - INFO - Sensor observations processed: 55
+2026-09-08 19:09:20,530 - INFO - Camera captures discovered: 4
+2026-09-08 19:09:20,530 - INFO - Camera captures processed: 0
+2026-09-08 19:09:20,530 - INFO - Plant images processed: 0
+2026-09-08 19:09:20,530 - INFO - Sensor matches: 0
+2026-09-08 19:09:20,531 - INFO - Sensor unmatched: 0
+2026-09-08 19:09:20,531 - INFO - Duplicate captures skipped: 4
+2026-09-08 19:09:20,531 - INFO - ============================================
+2026-09-08 19:09:20,531 - INFO - Application shutdown.
+2026-09-08 19:09:32,717 - INFO - Application startup.
+2026-09-08 19:09:32,717 - INFO - Starting Watch Mode. Interval: 5 seconds.
+2026-09-08 19:09:32,717 - INFO - Starting Data Manager iteration...
+2026-09-08 19:09:32,727 - INFO - Updated sensor master dataset: 55 total rows.
+2026-09-08 19:09:32,731 - INFO - Discovered 4 camera captures total.
+2026-09-08 19:09:32,731 - INFO - ============================================
+2026-09-08 19:09:32,731 - INFO - DATA MANAGER SUMMARY
+2026-09-08 19:09:32,732 - INFO - ============================================
+2026-09-08 19:09:32,732 - INFO - Sensor observations processed: 55
+2026-09-08 19:09:32,732 - INFO - Camera captures discovered: 4
+2026-09-08 19:09:32,732 - INFO - Camera captures processed: 0
+2026-09-08 19:09:32,733 - INFO - Plant images processed: 0
+2026-09-08 19:09:32,733 - INFO - Sensor matches: 0
+2026-09-08 19:09:32,733 - INFO - Sensor unmatched: 0
+2026-09-08 19:09:32,733 - INFO - Duplicate captures skipped: 4
+2026-09-08 19:09:32,733 - INFO - ============================================
+2026-09-08 19:09:37,734 - INFO - Starting Data Manager iteration...
+2026-09-08 19:09:37,740 - INFO - Updated sensor master dataset: 55 total rows.
+2026-09-08 19:09:37,743 - INFO - Discovered 4 camera captures total.
+2026-09-08 19:09:37,744 - INFO - ============================================
+2026-09-08 19:09:37,744 - INFO - DATA MANAGER SUMMARY
+2026-09-08 19:09:37,744 - INFO - ============================================
+2026-09-08 19:09:37,745 - INFO - Sensor observations processed: 55
+2026-09-08 19:09:37,745 - INFO - Camera captures discovered: 4
+2026-09-08 19:09:37,746 - INFO - Camera captures processed: 0
+2026-09-08 19:09:37,746 - INFO - Plant images processed: 0
+2026-09-08 19:09:37,746 - INFO - Sensor matches: 0
+2026-09-08 19:09:37,747 - INFO - Sensor unmatched: 0
+2026-09-08 19:09:37,747 - INFO - Duplicate captures skipped: 4
+2026-09-08 19:09:37,749 - INFO - ============================================
+2026-09-08 19:09:42,751 - INFO - Starting Data Manager iteration...
+2026-09-08 19:09:42,764 - INFO - Updated sensor master dataset: 55 total rows.
+2026-09-08 19:09:42,768 - INFO - Discovered 4 camera captures total.
+2026-09-08 19:09:42,770 - INFO - ============================================
+2026-09-08 19:09:42,770 - INFO - DATA MANAGER SUMMARY
+2026-09-08 19:09:42,770 - INFO - ============================================
+2026-09-08 19:09:42,770 - INFO - Sensor observations processed: 55
+2026-09-08 19:09:42,771 - INFO - Camera captures discovered: 4
+2026-09-08 19:09:42,771 - INFO - Camera captures processed: 0
+2026-09-08 19:09:42,771 - INFO - Plant images processed: 0
+2026-09-08 19:09:42,773 - INFO - Sensor matches: 0
+2026-09-08 19:09:42,778 - INFO - Sensor unmatched: 0
+2026-09-08 19:09:42,779 - INFO - Duplicate captures skipped: 4
+2026-09-08 19:09:42,780 - INFO - ============================================
+2026-09-08 19:09:44,165 - INFO - Watch Mode interrupted by user. Shutting down.
+2026-09-08 19:09:44,165 - INFO - Application shutdown.

@@ -1,0 +1,14 @@
+{
+    "experiment_id": "EXP001",
+    "crop": "Palak",
+    "section_id": "S01",
+    "channel_id": "C01",
+    "sensor_csv": "../sensor_logger/data/sensor_environment.csv",
+    "camera_captures_dir": "../datasets/captures",
+    "master_dataset": "data/master/master_dataset.csv",
+    "sensor_master_dataset": "data/master/sensor_master_dataset.csv",
+    "log_file": "logs/data_manager.log",
+    "state_file": "state/manager_state.json",
+    "sensor_match_tolerance_seconds": 60,
+    "watch_interval_seconds": 5
+}
