@@ -1,0 +1,499 @@
+{
+    "timestamp": "20260908_214710",
+    "section_id": "S01",
+    "channel_id": "C01",
+    "crop": "Palak",
+    "plant_count": 35,
+    "plants": [
+        {
+            "plant_id": "C01_P01",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P01_20260908_214710.jpg",
+            "bbox": {
+                "x": 210,
+                "y": 0,
+                "w": 203,
+                "h": 47
+            },
+            "center_x": 311,
+            "center_y": 19,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P02",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P02_20260908_214710.jpg",
+            "bbox": {
+                "x": 388,
+                "y": 0,
+                "w": 204,
+                "h": 47
+            },
+            "center_x": 490,
+            "center_y": 18,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P03",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P03_20260908_214710.jpg",
+            "bbox": {
+                "x": 581,
+                "y": 0,
+                "w": 191,
+                "h": 46
+            },
+            "center_x": 676,
+            "center_y": 18,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P04",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P04_20260908_214710.jpg",
+            "bbox": {
+                "x": 775,
+                "y": 0,
+                "w": 188,
+                "h": 47
+            },
+            "center_x": 869,
+            "center_y": 18,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P05",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P05_20260908_214710.jpg",
+            "bbox": {
+                "x": 955,
+                "y": 0,
+                "w": 179,
+                "h": 47
+            },
+            "center_x": 1044,
+            "center_y": 19,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P06",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P06_20260908_214710.jpg",
+            "bbox": {
+                "x": 1143,
+                "y": 0,
+                "w": 171,
+                "h": 48
+            },
+            "center_x": 1228,
+            "center_y": 20,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P07",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P07_20260908_214710.jpg",
+            "bbox": {
+                "x": 1327,
+                "y": 0,
+                "w": 163,
+                "h": 50
+            },
+            "center_x": 1408,
+            "center_y": 22,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P08",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P08_20260908_214710.jpg",
+            "bbox": {
+                "x": 144,
+                "y": 45,
+                "w": 208,
+                "h": 57
+            },
+            "center_x": 248,
+            "center_y": 73,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P09",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P09_20260908_214710.jpg",
+            "bbox": {
+                "x": 343,
+                "y": 45,
+                "w": 200,
+                "h": 56
+            },
+            "center_x": 443,
+            "center_y": 73,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P10",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P10_20260908_214710.jpg",
+            "bbox": {
+                "x": 546,
+                "y": 45,
+                "w": 196,
+                "h": 56
+            },
+            "center_x": 644,
+            "center_y": 73,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P11",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P11_20260908_214710.jpg",
+            "bbox": {
+                "x": 712,
+                "y": 44,
+                "w": 191,
+                "h": 57
+            },
+            "center_x": 807,
+            "center_y": 72,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P12",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P12_20260908_214710.jpg",
+            "bbox": {
+                "x": 891,
+                "y": 44,
+                "w": 183,
+                "h": 56
+            },
+            "center_x": 982,
+            "center_y": 72,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P13",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P13_20260908_214710.jpg",
+            "bbox": {
+                "x": 1091,
+                "y": 45,
+                "w": 177,
+                "h": 56
+            },
+            "center_x": 1179,
+            "center_y": 73,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P14",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P14_20260908_214710.jpg",
+            "bbox": {
+                "x": 1262,
+                "y": 45,
+                "w": 168,
+                "h": 56
+            },
+            "center_x": 1346,
+            "center_y": 73,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P15",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P15_20260908_214710.jpg",
+            "bbox": {
+                "x": 144,
+                "y": 91,
+                "w": 203,
+                "h": 55
+            },
+            "center_x": 245,
+            "center_y": 118,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P16",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P16_20260908_214710.jpg",
+            "bbox": {
+                "x": 323,
+                "y": 90,
+                "w": 200,
+                "h": 56
+            },
+            "center_x": 423,
+            "center_y": 118,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P17",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P17_20260908_214710.jpg",
+            "bbox": {
+                "x": 516,
+                "y": 90,
+                "w": 194,
+                "h": 56
+            },
+            "center_x": 613,
+            "center_y": 118,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P18",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P18_20260908_214710.jpg",
+            "bbox": {
+                "x": 700,
+                "y": 90,
+                "w": 190,
+                "h": 56
+            },
+            "center_x": 795,
+            "center_y": 118,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P19",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P19_20260908_214710.jpg",
+            "bbox": {
+                "x": 872,
+                "y": 90,
+                "w": 184,
+                "h": 56
+            },
+            "center_x": 964,
+            "center_y": 118,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P20",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P20_20260908_214710.jpg",
+            "bbox": {
+                "x": 1065,
+                "y": 90,
+                "w": 177,
+                "h": 56
+            },
+            "center_x": 1153,
+            "center_y": 118,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P21",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P21_20260908_214710.jpg",
+            "bbox": {
+                "x": 1256,
+                "y": 90,
+                "w": 170,
+                "h": 56
+            },
+            "center_x": 1341,
+            "center_y": 118,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P22",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P22_20260908_214710.jpg",
+            "bbox": {
+                "x": 230,
+                "y": 193,
+                "w": 192,
+                "h": 54
+            },
+            "center_x": 326,
+            "center_y": 220,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P23",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P23_20260908_214710.jpg",
+            "bbox": {
+                "x": 258,
+                "y": 136,
+                "w": 201,
+                "h": 55
+            },
+            "center_x": 358,
+            "center_y": 163,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P24",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P24_20260908_214710.jpg",
+            "bbox": {
+                "x": 421,
+                "y": 194,
+                "w": 191,
+                "h": 54
+            },
+            "center_x": 516,
+            "center_y": 221,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P25",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P25_20260908_214710.jpg",
+            "bbox": {
+                "x": 435,
+                "y": 137,
+                "w": 194,
+                "h": 55
+            },
+            "center_x": 532,
+            "center_y": 164,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P26",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P26_20260908_214710.jpg",
+            "bbox": {
+                "x": 633,
+                "y": 137,
+                "w": 189,
+                "h": 55
+            },
+            "center_x": 727,
+            "center_y": 164,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P27",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P27_20260908_214710.jpg",
+            "bbox": {
+                "x": 830,
+                "y": 137,
+                "w": 184,
+                "h": 56
+            },
+            "center_x": 922,
+            "center_y": 165,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P28",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P28_20260908_214710.jpg",
+            "bbox": {
+                "x": 999,
+                "y": 138,
+                "w": 177,
+                "h": 55
+            },
+            "center_x": 1087,
+            "center_y": 165,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P29",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P29_20260908_214710.jpg",
+            "bbox": {
+                "x": 1185,
+                "y": 138,
+                "w": 173,
+                "h": 55
+            },
+            "center_x": 1271,
+            "center_y": 165,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P30",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P30_20260908_214710.jpg",
+            "bbox": {
+                "x": 1329,
+                "y": 194,
+                "w": 163,
+                "h": 54
+            },
+            "center_x": 1410,
+            "center_y": 221,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P31",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P31_20260908_214710.jpg",
+            "bbox": {
+                "x": 1346,
+                "y": 138,
+                "w": 154,
+                "h": 55
+            },
+            "center_x": 1428,
+            "center_y": 165,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P32",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P32_20260908_214710.jpg",
+            "bbox": {
+                "x": 600,
+                "y": 195,
+                "w": 185,
+                "h": 54
+            },
+            "center_x": 692,
+            "center_y": 222,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P33",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P33_20260908_214710.jpg",
+            "bbox": {
+                "x": 782,
+                "y": 195,
+                "w": 181,
+                "h": 54
+            },
+            "center_x": 872,
+            "center_y": 222,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P34",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P34_20260908_214710.jpg",
+            "bbox": {
+                "x": 958,
+                "y": 195,
+                "w": 174,
+                "h": 54
+            },
+            "center_x": 1045,
+            "center_y": 222,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P35",
+            "image_path": "datasets/captures/20260908_214710/plant_crops/C01_P35_20260908_214710.jpg",
+            "bbox": {
+                "x": 1142,
+                "y": 195,
+                "w": 169,
+                "h": 54
+            },
+            "center_x": 1226,
+            "center_y": 222,
+            "capture_timestamp": "20260908_214710",
+            "save_status": "saved"
+        }
+    ]
+}
