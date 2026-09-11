@@ -15,11 +15,11 @@ CHANNEL_ID = "C01"
 CROP_NAME = "Palak"
 
 # Hole Detection Thresholds
-MIN_HOLE_AREA = 30
-MAX_HOLE_AREA = 10000
-MIN_CIRCULARITY = 0.05
-MIN_ASPECT_RATIO = 0.2
-MAX_ASPECT_RATIO = 5.0
+MIN_HOLE_AREA = 250        # Increased to ignore small background debris and floor tiles
+MAX_HOLE_AREA = 8000
+MIN_CIRCULARITY = 0.55     # Increased significantly to reject floor rectangles and lines, allowing only circles/ellipses
+MIN_ASPECT_RATIO = 0.5
+MAX_ASPECT_RATIO = 4.0
 MIN_DARKNESS = 130 # Maximum pixel value for thresholding (dark objects)
 
 # Target Warped Size (Landscape aspect ratio for a horizontal pipe)
@@ -68,6 +68,24 @@ def order_points(pts):
     (tr, br) = rightMost
     return np.array([tl, tr, br, bl], dtype="float32")
 
+def enhance_image(img):
+    """Enhances clarity and contrast using CLAHE and unsharp masking."""
+    # Convert to LAB space to equalize Lightness without messing up colors
+    lab = cv2.cvtColor(img, cv2.COLOR_BGR2LAB)
+    l, a, b = cv2.split(lab)
+    
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+    cl = clahe.apply(l)
+    
+    limg = cv2.merge((cl, a, b))
+    enhanced = cv2.cvtColor(limg, cv2.COLOR_LAB2BGR)
+    
+    # Unsharp mask for sharpness
+    gaussian = cv2.GaussianBlur(enhanced, (0, 0), 2.0)
+    sharpened = cv2.addWeighted(enhanced, 1.5, gaussian, -0.5, 0)
+    
+    return sharpened
+
 def warp_channel(frame, pts):
     rect = order_points(np.array(pts, dtype="float32"))
     dst = np.array([
@@ -92,7 +110,7 @@ def detect_holes_and_map(frame, pts):
     # 2. Run EXACT old detection on the original full frame
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (5, 5), 0)
-    _, binary = cv2.threshold(blurred, 130, 255, cv2.THRESH_BINARY)
+    _, binary = cv2.threshold(blurred, MIN_DARKNESS, 255, cv2.THRESH_BINARY)
     contours, hierarchy = cv2.findContours(binary, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)
     
     holes_warped = []
@@ -101,40 +119,50 @@ def detect_holes_and_map(frame, pts):
     if hierarchy is not None:
         for i, cnt in enumerate(contours):
             parent_idx = hierarchy[0][i][3]
+            # hierarchy[0][i][3] != -1 means it's a hole inside another contour
             if parent_idx != -1:
                 area = cv2.contourArea(cnt)
-                if 30 < area < 3000:
+                if MIN_HOLE_AREA < area < MAX_HOLE_AREA:
                     x, y, w, h = cv2.boundingRect(cnt)
                     aspect_ratio = float(w) / h
-                    if 1.0 <= aspect_ratio <= 4.5:
-                        # 3. Check if hole center is inside the selected 4-point ROI
-                        cx = x + w / 2.0
-                        cy = y + h / 2.0
-                        if cv2.pointPolygonTest(poly_pts, (cx, cy), False) >= 0:
-                            # 4. Map the bounding box to the warped image coordinates
-                            pad = 10
-                            x1 = max(0, x - pad)
-                            y1 = max(0, y - pad)
-                            x2 = min(frame.shape[1], x + w + pad)
-                            y2 = min(frame.shape[0], y + h + pad)
-                            
-                            corners = np.array([
-                                [x1, y1], 
-                                [x2, y1], 
-                                [x2, y2], 
-                                [x1, y2]
-                            ], dtype="float32").reshape(-1, 1, 2)
-                            
-                            warped_corners = cv2.perspectiveTransform(corners, M)
-                            wx, wy, ww, wh = cv2.boundingRect(warped_corners)
-                            
-                            # Ensure within warped bounds
-                            wx = max(0, wx)
-                            wy = max(0, wy)
-                            
-                            holes_warped.append((wx, wy, ww, wh))
-                            
-    # Sort top-to-bottom, left-to-right based on WARPED coordinates
+                    
+                    if MIN_ASPECT_RATIO <= aspect_ratio <= MAX_ASPECT_RATIO:
+                        perimeter = cv2.arcLength(cnt, True)
+                        if perimeter > 0:
+                            circularity = 4 * np.pi * (area / (perimeter * perimeter))
+                            if circularity > MIN_CIRCULARITY:
+                                # 3. Check if hole center is inside the selected 4-point ROI
+                                cx = x + w / 2.0
+                                cy = y + h / 2.0
+                                if cv2.pointPolygonTest(poly_pts, (cx, cy), False) >= 0:
+                                    # 4. Map the bounding box to the warped image coordinates
+                                    pad = 10
+                                    x1 = max(0, x - pad)
+                                    y1 = max(0, y - pad)
+                                    x2 = min(frame.shape[1], x + w + pad)
+                                    y2 = min(frame.shape[0], y + h + pad)
+                                    
+                                    corners = np.array([
+                                        [x1, y1], 
+                                        [x2, y1], 
+                                        [x2, y2], 
+                                        [x1, y2]
+                                    ], dtype="float32").reshape(-1, 1, 2)
+                                    
+                                    warped_corners = cv2.perspectiveTransform(corners, M)
+                                    wx, wy, ww, wh = cv2.boundingRect(warped_corners)
+                                    
+                                    # FIX: Clamping to strictly avoid Invalid Dimensions
+                                    wx = int(max(0, min(wx, WARP_WIDTH - 1)))
+                                    wy = int(max(0, min(wy, WARP_HEIGHT - 1)))
+                                    ww = int(min(ww, WARP_WIDTH - wx))
+                                    wh = int(min(wh, WARP_HEIGHT - wy))
+                                    
+                                    # Only add if the resulting box is valid
+                                    if ww > 5 and wh > 5:
+                                        holes_warped.append((wx, wy, ww, wh))
+                                        
+    # 5. Sort top-to-bottom (roughly via 60px buckets), then left-to-right for proper sequential labeling
     holes_warped.sort(key=lambda r: (round(r[1] / 60) * 60, r[0]))
     
     return holes_warped
@@ -205,17 +233,40 @@ def save_capture(frame, warped, timestamp):
         p_id = h['id']
         x, y, w, h_box = h['x'], h['y'], h['w'], h['h']
         
-        # Apply CROP_PADDING
-        x1 = max(0, x - CROP_PADDING)
-        y1 = max(0, y - CROP_PADDING)
-        x2 = min(WARP_WIDTH, x + w + CROP_PADDING)
-        y2 = min(WARP_HEIGHT, y + h_box + CROP_PADDING)
+        # Calculate square dimensions based on the larger side
+        side = max(w, h_box) + 2 * CROP_PADDING
+        half_side = side // 2
+        
+        center_x = x + w // 2
+        center_y = y + h_box // 2
+        
+        x1 = max(0, center_x - half_side)
+        y1 = max(0, center_y - half_side)
+        x2 = min(WARP_WIDTH, center_x + half_side)
+        y2 = min(WARP_HEIGHT, center_y + half_side)
         
         crop_path = os.path.join(crops_dir, f"{p_id}_{timestamp}.jpg")
         
         save_status = "failed"
         if x2 > x1 and y2 > y1:
             crop = warped[y1:y2, x1:x2]
+            
+            # Ensure crop is a perfect square (pad with black if it hits the image edge)
+            h_crop, w_crop = crop.shape[:2]
+            if h_crop != side or w_crop != side:
+                square_crop = np.zeros((side, side, 3), dtype=np.uint8)
+                x_off = (side - w_crop) // 2
+                y_off = (side - h_crop) // 2
+                square_crop[y_off:y_off+h_crop, x_off:x_off+w_crop] = crop
+                crop = square_crop
+                
+            # Enhance the crop for visibility and clarity
+            crop = enhance_image(crop)
+            
+            # Resize to standard dimensions for ML consistency (e.g. 224x224)
+            final_size = 224
+            crop = cv2.resize(crop, (final_size, final_size))
+            
             success = cv2.imwrite(crop_path, crop)
             if success:
                 saved_count += 1
@@ -226,9 +277,6 @@ def save_capture(frame, warped, timestamp):
         else:
             failed_count += 1
             print(f"[!] Error: Invalid dimensions for {p_id} crop")
-            
-        center_x = x + w // 2
-        center_y = y + h_box // 2
             
         plant_records.append({
             "plant_id": p_id,
@@ -272,7 +320,8 @@ def save_capture(frame, warped, timestamp):
 def main(camera_url):
     global roi_points, calibrated_holes, app_state
     
-    load_config()
+    # Do not auto-load config on startup per user request
+    # load_config()
 
     print(f"Attempting to connect to: {camera_url}")
     cap = cv2.VideoCapture(camera_url)
@@ -289,6 +338,7 @@ def main(camera_url):
     print("  'm' : Save current holes as permanently calibrated")
     print("  'c' : Clear ROI and detections")
     print("  's' : Capture clean dataset images")
+    print("  'l' : Load last saved calibration")
     print("  'q' : Quit")
     print("---------------------------------------------")
 
@@ -394,6 +444,9 @@ def main(camera_url):
                 save_capture(frame, warped, timestamp)
             else:
                 print("[!] Not ready to capture. Please select ROI (r) -> detect (a) -> save calibration (m).")
+
+        elif key == ord('l'):
+            load_config()
 
         elif key == ord('q'):
             print("Exiting camera stream...")
