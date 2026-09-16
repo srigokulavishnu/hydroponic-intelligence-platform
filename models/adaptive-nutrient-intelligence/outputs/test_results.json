@@ -1,0 +1,21 @@
+{
+    "model": "Nutrient XGBoost Stage-Aware Baseline",
+    "dataset": "Figshare IoT Sensor Dataset",
+    "task": "Binary classification",
+    "target": "condition_label",
+    "target_classes": {
+        "0": "NON_OPTIMAL",
+        "1": "OPTIMAL"
+    },
+    "label_type": "rule_derived_baseline",
+    "metrics": {
+        "accuracy": 0.999834656084656,
+        "precision": 1.0,
+        "recall": 0.9980601357904947,
+        "f1_score": 0.9990291262135922
+    },
+    "sample_counts": {
+        "train": 96768,
+        "test": 24192
+    }
+}

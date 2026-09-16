@@ -1,0 +1,253 @@
+[
+  {
+    "knowledge_id": "palak_health_001",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "health_state",
+    "health_state": "HEALTHY",
+    "description": "General visual characteristics of a normal-looking leaf/canopy context with expected structural appearance. The prediction is a visual classification, not a biological guarantee.",
+    "visual_indicators": [
+      "Normal leaf color",
+      "Expected canopy size",
+      "No visible wilting or necrotic spots"
+    ],
+    "possible_contexts": [
+      "Optimal environmental conditions",
+      "Normal growth progression"
+    ],
+    "recommended_investigation": [
+      "Continue monitoring normally"
+    ],
+    "safety_note": "A visually healthy prediction does not guarantee the absence of all nutrient or environmental problems.",
+    "keywords": [
+      "HEALTHY",
+      "normal",
+      "monitoring"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_002",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "health_state",
+    "health_state": "STRESS",
+    "description": "Stress can have multiple possible causes and may be associated with sub-optimal environmental or nutrient conditions. This requires contextual investigation.",
+    "visual_indicators": [
+      "Yellowing",
+      "Wilting",
+      "Reduced canopy",
+      "Discoloration",
+      "Abnormal development"
+    ],
+    "possible_contexts": [
+      "Sub-optimal nutrient status",
+      "Environmental stress (temperature, humidity, light)"
+    ],
+    "recommended_investigation": [
+      "Check pH, EC, temperature, humidity, and light",
+      "Review nutrient-model output",
+      "Review growth context and previous plant observations",
+      "Check image quality"
+    ],
+    "safety_note": "Do not identify a single cause automatically. Yellowing does not always mean nutrient deficiency. Wilting does not always mean water stress.",
+    "keywords": [
+      "STRESS",
+      "yellowing",
+      "wilting",
+      "investigation"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_003",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "health_state",
+    "health_state": "DAMAGE_OR_DISEASE",
+    "description": "Visible abnormalities indicating severe stress, damage, or disease. The model output is an alert for further inspection and is not a definitive biological disease diagnosis.",
+    "visual_indicators": [
+      "Visible leaf damage",
+      "Necrotic regions",
+      "Severe discoloration",
+      "Structural abnormalities",
+      "Disease-suspected visual patterns"
+    ],
+    "possible_contexts": [
+      "Physical damage",
+      "Severe environmental stress",
+      "Potential pathogen or pest presence"
+    ],
+    "recommended_investigation": [
+      "Inspect the original image",
+      "Check sensor/environment conditions",
+      "Compare recent plant history",
+      "Check whether the abnormality persists across multiple observations",
+      "Consider manual/agronomic inspection where appropriate"
+    ],
+    "safety_note": "Do not invent specific pathogens. This state is an alert for further investigation, not a diagnosis.",
+    "keywords": [
+      "DAMAGE",
+      "DISEASE",
+      "necrosis",
+      "alert"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_004",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "visual_indicator",
+    "indicator": "Chlorosis / yellowing",
+    "description": "Visible loss of normal green coloration. This can have multiple possible causes and should be interpreted with sensor data, nutrient state, growth stage, and history. It should not automatically be labelled as a specific nutrient deficiency.",
+    "keywords": [
+      "Chlorosis",
+      "yellowing",
+      "indicator"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_005",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "visual_indicator",
+    "indicator": "Wilting",
+    "description": "Leaves may appear drooped or less turgid. Possible environmental or plant-condition causes exist. Investigate temperature, humidity, solution condition, image evidence, and historical trend.",
+    "keywords": [
+      "Wilting",
+      "drooping",
+      "turgor"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_006",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "visual_indicator",
+    "indicator": "Necrosis / leaf damage",
+    "description": "Dead or damaged-looking tissue. Requires inspection of persistence and distribution. May indicate severe stress, physical damage, or disease-related abnormality. Do not identify a pathogen automatically.",
+    "keywords": [
+      "Necrosis",
+      "damage",
+      "dead tissue"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_007",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "visual_indicator",
+    "indicator": "Canopy reduction",
+    "description": "Reduced visible canopy size or density compared with expected development. Should be interpreted relative to growth stage and previous observations.",
+    "keywords": [
+      "Canopy reduction",
+      "size",
+      "density"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_008",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "visual_indicator",
+    "indicator": "Leaf deformation",
+    "description": "Abnormal leaf shape or structure. Possible environmental, developmental, or other causes exist. Requires contextual investigation.",
+    "keywords": [
+      "Deformation",
+      "abnormal shape"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_009",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "interpretation_principle",
+    "principle": "Health Model Interpretation",
+    "description": "The Health AI prediction should be interpreted as a visual classification result. For example, a result means 'The model has classified the supplied image as stress with the reported confidence.' It does NOT mean 'The plant is definitely stressed because of a specific cause.' The backend should combine Health prediction with latest sensor state, nutrient prediction, growth information, plant history, and relevant Knowledge Base entries before generating an explanation.",
+    "keywords": [
+      "Interpretation",
+      "classification",
+      "backend"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_010",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "interpretation_principle",
+    "principle": "Temporal Confirmation",
+    "description": "Repeated observations are useful when evaluating persistent health abnormalities. A single abnormal image should not automatically be treated as a confirmed persistent condition. Where appropriate, the system should check current observation, previous observation, trend over time, and whether the condition persists or improves.",
+    "keywords": [
+      "Temporal",
+      "persistence",
+      "trend",
+      "repeated observation"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_011",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "interpretation_principle",
+    "principle": "Image Quality",
+    "description": "Poor image quality can affect visual health interpretation. Potential image-quality issues include blur, poor exposure, severe occlusion, missing plant region, or camera obstruction. If image quality is poor, confidence should be interpreted cautiously and the system should request/recommend another observation when appropriate.",
+    "keywords": [
+      "Image quality",
+      "blur",
+      "exposure",
+      "occlusion"
+    ],
+    "source_type": "project_sensor_context",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_012",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "interpretation_principle",
+    "principle": "Contextual Fusion",
+    "description": "Health interpretation should combine Visual evidence + Sensor conditions + Nutrient model output + Growth context + Historical observations + Crop Knowledge before producing a contextual explanation.",
+    "keywords": [
+      "Fusion",
+      "contextual",
+      "evidence",
+      "combination"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  },
+  {
+    "knowledge_id": "palak_health_013",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "interpretation_principle",
+    "principle": "Safety Principles",
+    "description": "AI health predictions are decision-support evidence. They are not guaranteed diagnoses. The LLM must not invent causes. The LLM should explicitly communicate uncertainty where the available evidence is insufficient. The system should recommend further observation or inspection when necessary. Do not create autonomous treatment or actuator commands.",
+    "keywords": [
+      "Safety",
+      "diagnosis",
+      "decision-support",
+      "uncertainty"
+    ],
+    "source_type": "project_methodology",
+    "source": "Health interpretation framework"
+  }
+]

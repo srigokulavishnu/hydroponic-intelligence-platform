@@ -18,3 +18,5 @@ venv/
 data/
 
 dataset/
+models/adaptive-nutrient-intelligence/dataset
+models/plant-health-intelligence/dataset/Spinach Dataset

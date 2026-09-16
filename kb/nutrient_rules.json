@@ -1,0 +1,514 @@
+[
+  {
+    "knowledge_id": "palak_nutrient_001",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "nutrient_parameter",
+    "stage_group": "EARLY",
+    "parameter": "pH",
+    "unit": "pH",
+    "reference_range": {
+      "min": 5.8,
+      "max": 6.5
+    },
+    "reference_type": "baseline_project_rule",
+    "condition_rules": [
+      {
+        "condition": "below_reference",
+        "interpretation": "pH is below the baseline reference, potentially affecting nutrient availability.",
+        "severity": "review"
+      },
+      {
+        "condition": "within_reference",
+        "interpretation": "pH is within the baseline project reference.",
+        "severity": "normal"
+      },
+      {
+        "condition": "above_reference",
+        "interpretation": "pH is above the baseline reference, potentially affecting nutrient availability.",
+        "severity": "review"
+      }
+    ],
+    "recommended_investigation": "Check recent pH readings and buffer levels.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "safety_note": "A nutrient-model prediction must not be treated as a standalone diagnosis.",
+    "keywords": [
+      "pH",
+      "EARLY",
+      "baseline"
+    ],
+    "source_type": "model_methodology",
+    "source": "Stage-aware baseline labeling rules"
+  },
+  {
+    "knowledge_id": "palak_nutrient_002",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "nutrient_parameter",
+    "stage_group": "EARLY",
+    "parameter": "EC",
+    "unit": "mS/cm",
+    "reference_range": {
+      "min": 0.9,
+      "max": 1.3
+    },
+    "reference_type": "baseline_project_rule",
+    "condition_rules": [
+      {
+        "condition": "below_reference",
+        "interpretation": "EC is below the baseline reference, indicating potentially low nutrient concentration.",
+        "severity": "review"
+      },
+      {
+        "condition": "within_reference",
+        "interpretation": "EC is within the baseline project reference.",
+        "severity": "normal"
+      },
+      {
+        "condition": "above_reference",
+        "interpretation": "EC is above the baseline reference, indicating potentially high nutrient concentration.",
+        "severity": "review"
+      }
+    ],
+    "recommended_investigation": "Check nutrient dosing and water levels.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "safety_note": "A nutrient-model prediction must not be treated as a standalone diagnosis.",
+    "keywords": [
+      "EC",
+      "EARLY",
+      "baseline"
+    ],
+    "source_type": "model_methodology",
+    "source": "Stage-aware baseline labeling rules"
+  },
+  {
+    "knowledge_id": "palak_nutrient_003",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "nutrient_parameter",
+    "stage_group": "MIDDLE",
+    "parameter": "pH",
+    "unit": "pH",
+    "reference_range": {
+      "min": 5.8,
+      "max": 6.5
+    },
+    "reference_type": "baseline_project_rule",
+    "condition_rules": [
+      {
+        "condition": "below_reference",
+        "interpretation": "pH is below the baseline reference, potentially affecting nutrient availability.",
+        "severity": "review"
+      },
+      {
+        "condition": "within_reference",
+        "interpretation": "pH is within the baseline project reference.",
+        "severity": "normal"
+      },
+      {
+        "condition": "above_reference",
+        "interpretation": "pH is above the baseline reference, potentially affecting nutrient availability.",
+        "severity": "review"
+      }
+    ],
+    "recommended_investigation": "Check recent pH readings and buffer levels.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "safety_note": "A nutrient-model prediction must not be treated as a standalone diagnosis.",
+    "keywords": [
+      "pH",
+      "MIDDLE",
+      "baseline"
+    ],
+    "source_type": "model_methodology",
+    "source": "Stage-aware baseline labeling rules"
+  },
+  {
+    "knowledge_id": "palak_nutrient_004",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "nutrient_parameter",
+    "stage_group": "MIDDLE",
+    "parameter": "EC",
+    "unit": "mS/cm",
+    "reference_range": {
+      "min": 1.2,
+      "max": 1.6
+    },
+    "reference_type": "baseline_project_rule",
+    "condition_rules": [
+      {
+        "condition": "below_reference",
+        "interpretation": "EC is below the baseline reference, indicating potentially low nutrient concentration.",
+        "severity": "review"
+      },
+      {
+        "condition": "within_reference",
+        "interpretation": "EC is within the baseline project reference.",
+        "severity": "normal"
+      },
+      {
+        "condition": "above_reference",
+        "interpretation": "EC is above the baseline reference, indicating potentially high nutrient concentration.",
+        "severity": "review"
+      }
+    ],
+    "recommended_investigation": "Check nutrient dosing and water levels.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "safety_note": "A nutrient-model prediction must not be treated as a standalone diagnosis.",
+    "keywords": [
+      "EC",
+      "MIDDLE",
+      "baseline"
+    ],
+    "source_type": "model_methodology",
+    "source": "Stage-aware baseline labeling rules"
+  },
+  {
+    "knowledge_id": "palak_nutrient_005",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "nutrient_parameter",
+    "stage_group": "LATE",
+    "parameter": "pH",
+    "unit": "pH",
+    "reference_range": {
+      "min": 5.8,
+      "max": 6.5
+    },
+    "reference_type": "baseline_project_rule",
+    "condition_rules": [
+      {
+        "condition": "below_reference",
+        "interpretation": "pH is below the baseline reference, potentially affecting nutrient availability.",
+        "severity": "review"
+      },
+      {
+        "condition": "within_reference",
+        "interpretation": "pH is within the baseline project reference.",
+        "severity": "normal"
+      },
+      {
+        "condition": "above_reference",
+        "interpretation": "pH is above the baseline reference, potentially affecting nutrient availability.",
+        "severity": "review"
+      }
+    ],
+    "recommended_investigation": "Check recent pH readings and buffer levels.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "safety_note": "A nutrient-model prediction must not be treated as a standalone diagnosis.",
+    "keywords": [
+      "pH",
+      "LATE",
+      "baseline"
+    ],
+    "source_type": "model_methodology",
+    "source": "Stage-aware baseline labeling rules"
+  },
+  {
+    "knowledge_id": "palak_nutrient_006",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "nutrient_parameter",
+    "stage_group": "LATE",
+    "parameter": "EC",
+    "unit": "mS/cm",
+    "reference_range": {
+      "min": 1.5,
+      "max": 2.0
+    },
+    "reference_type": "baseline_project_rule",
+    "condition_rules": [
+      {
+        "condition": "below_reference",
+        "interpretation": "EC is below the baseline reference, indicating potentially low nutrient concentration.",
+        "severity": "review"
+      },
+      {
+        "condition": "within_reference",
+        "interpretation": "EC is within the baseline project reference.",
+        "severity": "normal"
+      },
+      {
+        "condition": "above_reference",
+        "interpretation": "EC is above the baseline reference, indicating potentially high nutrient concentration.",
+        "severity": "review"
+      }
+    ],
+    "recommended_investigation": "Check nutrient dosing and water levels.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "safety_note": "A nutrient-model prediction must not be treated as a standalone diagnosis.",
+    "keywords": [
+      "EC",
+      "LATE",
+      "baseline"
+    ],
+    "source_type": "model_methodology",
+    "source": "Stage-aware baseline labeling rules"
+  },
+  {
+    "knowledge_id": "palak_nutrient_007",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "environmental_parameter",
+    "parameter": "Air temperature",
+    "unit": "°C",
+    "reference_range": {
+      "min": 18.0,
+      "max": 30.0
+    },
+    "reference_type": "literature_reference",
+    "condition_rules": [
+      {
+        "condition": "below_reference",
+        "interpretation": "Air temperature is below the general growth reference, which may slow metabolic processes.",
+        "severity": "review"
+      },
+      {
+        "condition": "within_reference",
+        "interpretation": "Air temperature is within the general growth reference.",
+        "severity": "normal"
+      },
+      {
+        "condition": "above_reference",
+        "interpretation": "Air temperature is above the general growth reference, increasing the risk of heat stress.",
+        "severity": "attention"
+      }
+    ],
+    "recommended_investigation": "Check ambient climate control systems and ventilation.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "safety_note": "Contextual variable. Does not constitute an automatic control signal.",
+    "keywords": [
+      "temperature",
+      "air",
+      "environmental"
+    ],
+    "source_type": "literature_reference",
+    "source": "General spinach growth reference"
+  },
+  {
+    "knowledge_id": "palak_nutrient_008",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "environmental_parameter",
+    "parameter": "Relative humidity",
+    "unit": "%",
+    "reference_range": {
+      "min": 50.0,
+      "max": 70.0
+    },
+    "reference_type": "literature_reference",
+    "condition_rules": [
+      {
+        "condition": "below_reference",
+        "interpretation": "Humidity is below the practical operating reference, which may cause excessive transpiration.",
+        "severity": "review"
+      },
+      {
+        "condition": "within_reference",
+        "interpretation": "Humidity is within the practical operating reference.",
+        "severity": "normal"
+      },
+      {
+        "condition": "above_reference",
+        "interpretation": "Humidity is above the practical operating reference, increasing the risk of fungal issues.",
+        "severity": "attention"
+      }
+    ],
+    "recommended_investigation": "Check ventilation and environmental controls.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "safety_note": "Contextual variable. Does not constitute an automatic control signal.",
+    "keywords": [
+      "humidity",
+      "relative",
+      "environmental"
+    ],
+    "source_type": "literature_reference",
+    "source": "Practical project operating reference"
+  },
+  {
+    "knowledge_id": "palak_nutrient_009",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "environmental_parameter",
+    "parameter": "Water/nutrient-solution temperature",
+    "unit": "°C",
+    "reference_range": {
+      "min": 19.0,
+      "max": 26.0
+    },
+    "reference_type": "literature_reference",
+    "condition_rules": [
+      {
+        "condition": "below_reference",
+        "interpretation": "Solution temperature is below the hydroponic reference, potentially slowing root metabolism.",
+        "severity": "review"
+      },
+      {
+        "condition": "within_reference",
+        "interpretation": "Solution temperature is within the hydroponic reference.",
+        "severity": "normal"
+      },
+      {
+        "condition": "above_reference",
+        "interpretation": "Solution temperature is above the hydroponic reference, reducing dissolved oxygen capacity.",
+        "severity": "attention"
+      }
+    ],
+    "recommended_investigation": "Check reservoir temperature and chilling/heating systems.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "safety_note": "Contextual variable. Does not constitute an automatic control signal.",
+    "keywords": [
+      "temperature",
+      "water",
+      "solution"
+    ],
+    "source_type": "literature_reference",
+    "source": "Hydroponic reference"
+  },
+  {
+    "knowledge_id": "palak_nutrient_010",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "environmental_parameter",
+    "parameter": "Light",
+    "unit": "relative/LDR",
+    "description": "The current hardware provides an LDR/relative light reading. Scientific hydroponic references commonly use PPFD and DLI. PPFD and DLI cannot be directly substituted with raw LDR values. A fixed LDR operating range should only be created after calibration against a suitable light measurement. DLI around 14-17 mol/m2/day may be stored as a literature reference for controlled hydroponic spinach environments, but this must not be presented as an LDR value. It provides supporting context for interpretation.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "keywords": [
+      "Light",
+      "LDR",
+      "PPFD",
+      "DLI",
+      "contextual"
+    ],
+    "source_type": "sensor_schema",
+    "source": "Project sensor specifications"
+  },
+  {
+    "knowledge_id": "palak_nutrient_011",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "nutrient_parameter",
+    "parameter": "TDS",
+    "unit": "PPM",
+    "description": "TDS is related to dissolved-solute concentration and should be interpreted alongside EC. It is a supporting nutrient-solution parameter. No independent hard optimal range is provided without a validated source.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "keywords": [
+      "TDS",
+      "solutes",
+      "supporting"
+    ],
+    "source_type": "sensor_schema",
+    "source": "Project sensor specifications"
+  },
+  {
+    "knowledge_id": "palak_nutrient_012",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "nutrient_parameter",
+    "parameter": "Salinity",
+    "unit": "PPT",
+    "description": "Salinity is a supporting solution parameter. No independent hard optimal range is provided without a validated source.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "keywords": [
+      "Salinity",
+      "supporting"
+    ],
+    "source_type": "sensor_schema",
+    "source": "Project sensor specifications"
+  },
+  {
+    "knowledge_id": "palak_nutrient_013",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "nutrient_status",
+    "status": "OPTIMAL",
+    "description": "The current baseline defines OPTIMAL according to the project stage-aware pH/EC rules. It is a baseline classification. It is not laboratory confirmation of nutrient concentration. Other environmental variables should still be considered.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "keywords": [
+      "OPTIMAL",
+      "baseline",
+      "classification"
+    ],
+    "source_type": "project_methodology",
+    "source": "Stage-aware baseline labeling rules"
+  },
+  {
+    "knowledge_id": "palak_nutrient_014",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "nutrient_status",
+    "status": "NON_OPTIMAL",
+    "description": "The current baseline defines NON_OPTIMAL when the stage-aware pH/EC conditions fall outside the defined baseline range. It does not identify a specific nutrient deficiency. It should trigger contextual investigation using sensor trends, plant images, Health prediction, Growth context and plant history when available.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "keywords": [
+      "NON_OPTIMAL",
+      "investigation",
+      "baseline"
+    ],
+    "source_type": "project_methodology",
+    "source": "Stage-aware baseline labeling rules"
+  },
+  {
+    "knowledge_id": "palak_nutrient_015",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "model_knowledge",
+    "model_name": "XGBoost nutrient baseline",
+    "description": "The current model uses pH, EC, temperature, humidity, light, and growth-stage context/proxy to predict the baseline nutrient-status class (OPTIMAL or NON_OPTIMAL). This model is not an N/P/K concentration predictor.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "keywords": [
+      "XGBoost",
+      "baseline",
+      "model"
+    ],
+    "source_type": "project_methodology",
+    "source": "Stage-aware baseline labeling rules"
+  },
+  {
+    "knowledge_id": "palak_nutrient_016",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "stage_mapping",
+    "description": "EARLY maps to G0, G1. MIDDLE maps to G2. LATE maps to G3, G4. This is the stage grouping used for the current nutrient baseline and can later be replaced/refined when the real Growth Intelligence model is available.",
+    "mapping": {
+      "EARLY": [
+        "G0",
+        "G1"
+      ],
+      "MIDDLE": [
+        "G2"
+      ],
+      "LATE": [
+        "G3",
+        "G4"
+      ]
+    },
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "keywords": [
+      "mapping",
+      "stage",
+      "EARLY",
+      "MIDDLE",
+      "LATE"
+    ],
+    "source_type": "project_methodology",
+    "source": "Stage-aware baseline labeling rules"
+  },
+  {
+    "knowledge_id": "palak_nutrient_017",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "safety_rule",
+    "description": "A nutrient-model prediction must not be treated as a standalone diagnosis. The platform should combine sensor measurements, model predictions, growth context, image evidence and historical observations before generating an explanation or recommendation.",
+    "reference_note": "Reference values are context-dependent and are not universal biological thresholds.",
+    "keywords": [
+      "safety",
+      "interpretation",
+      "diagnosis",
+      "recommendation"
+    ],
+    "source_type": "project_methodology",
+    "source": "Project safety framework"
+  }
+]

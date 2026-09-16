@@ -1,0 +1,166 @@
+[
+  {
+    "knowledge_id": "palak_growth_001",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "growth_stage",
+    "stage_id": "G0",
+    "stage_name": "Germination",
+    "description": "The initial stage where the seed breaks dormancy and the radicle emerges. This typically occurs in the nursery or propagation area before transfer to the NFT system.",
+    "expected_development": [
+      "Seed imbibition and swelling",
+      "Radicle (first root) emergence",
+      "Hypocotyl elongation"
+    ],
+    "visual_indicators": [
+      "No visible true leaves",
+      "Emergence of cotyledons from the propagation media"
+    ],
+    "maturity_context": "Not mature. Highly vulnerable to environmental fluctuations.",
+    "keywords": [
+      "Germination",
+      "Cotyledons",
+      "Nursery",
+      "Radicle"
+    ],
+    "source_type": "project_reference",
+    "source": "Project growth framework"
+  },
+  {
+    "knowledge_id": "palak_growth_002",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "growth_stage",
+    "stage_id": "G1",
+    "stage_name": "Seedling",
+    "description": "The stage following germination where the first true leaves appear. The young plant is developing a basic root system to support initial vegetative growth.",
+    "expected_development": [
+      "Unfolding of cotyledons",
+      "Appearance of the first set of true leaves",
+      "Initial root branching"
+    ],
+    "visual_indicators": [
+      "Presence of small, developing true leaves",
+      "Plant is small relative to the growing hole",
+      "Foliage color is typically light to medium green"
+    ],
+    "maturity_context": "Juvenile stage. Often the stage at which plants are transplanted into the main NFT channels.",
+    "keywords": [
+      "Seedling",
+      "True leaves",
+      "Transplant",
+      "Juvenile"
+    ],
+    "source_type": "project_reference",
+    "source": "Project growth framework"
+  },
+  {
+    "knowledge_id": "palak_growth_003",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "growth_stage",
+    "stage_id": "G2",
+    "stage_name": "Establishment",
+    "description": "The plant adapts to the NFT system, rapidly expanding its root network in the nutrient stream to support increasing leaf biomass.",
+    "expected_development": [
+      "Rapid expansion of the root mat in the channel",
+      "Increase in leaf count",
+      "Beginning of rosette formation"
+    ],
+    "visual_indicators": [
+      "Noticeable increase in canopy diameter",
+      "Leaves become broader and darker green",
+      "Plant begins to cover the immediate area around the growing hole"
+    ],
+    "maturity_context": "Intermediate stage. Roots are established, and growth accelerates.",
+    "keywords": [
+      "Establishment",
+      "Root mat",
+      "Canopy expansion",
+      "Rosette"
+    ],
+    "source_type": "project_reference",
+    "source": "Project growth framework"
+  },
+  {
+    "knowledge_id": "palak_growth_004",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "growth_stage",
+    "stage_id": "G3",
+    "stage_name": "Vegetative",
+    "description": "The period of maximum leaf production and biomass accumulation. The rosette structure becomes dense and well-defined.",
+    "expected_development": [
+      "Significant accumulation of vegetative biomass",
+      "Continuous production of new leaves from the center",
+      "Leaves may develop savoyed (crinkled) textures depending on variety"
+    ],
+    "visual_indicators": [
+      "Dense, full rosette canopy",
+      "Leaves may overlap with neighboring plants in the channel",
+      "Consistent dark green coloration across mature leaves"
+    ],
+    "maturity_context": "Approaching maturity. Some outer leaves may be suitable for early harvest.",
+    "keywords": [
+      "Vegetative",
+      "Biomass",
+      "Dense rosette",
+      "Leaf production"
+    ],
+    "source_type": "project_reference",
+    "source": "Project growth framework"
+  },
+  {
+    "knowledge_id": "palak_growth_005",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "growth_stage",
+    "stage_id": "G4",
+    "stage_name": "Harvest-Ready",
+    "description": "The crop has reached optimal commercial or culinary size. Growth rate plateaus, and the plant must be harvested before bolting occurs.",
+    "expected_development": [
+      "Maximum desired vegetative mass achieved",
+      "Slowing of new leaf production",
+      "Increased risk of bolting if environmental stress occurs"
+    ],
+    "visual_indicators": [
+      "Maximum canopy diameter for the growing spacing",
+      "Large, fully expanded outer leaves",
+      "No signs of stem elongation (which would indicate bolting)"
+    ],
+    "maturity_context": "Fully mature. Ready for whole-plant harvest or continued cut-and-come-again harvesting.",
+    "keywords": [
+      "Harvest-Ready",
+      "Mature",
+      "Peak biomass",
+      "Pre-bolting"
+    ],
+    "source_type": "project_reference",
+    "source": "Project growth framework"
+  },
+  {
+    "knowledge_id": "palak_growth_006",
+    "crop_id": "PALAK",
+    "scientific_name": "Spinacia oleracea",
+    "category": "growth_tracking",
+    "stage_id": "LONGITUDINAL",
+    "stage_name": "Longitudinal Tracking",
+    "description": "The process of tracking individual plants over time to assess growth rate and trajectory. Repeated observations of the same permanent plant_id over time can be used to estimate growth progression and trend after sufficient labeled project data has been collected.",
+    "expected_development": [
+      "Transitioning sequentially from G0 to G4 over time"
+    ],
+    "visual_indicators": [
+      "Relative increase in canopy size compared to previous observations",
+      "Changes in leaf morphology over sequential images"
+    ],
+    "maturity_context": "Provides temporal context to evaluate whether growth velocity aligns with expected developmental timelines.",
+    "keywords": [
+      "Longitudinal",
+      "Trend",
+      "Progression",
+      "Temporal context"
+    ],
+    "source_type": "project_reference",
+    "source": "Project growth framework"
+  }
+]
