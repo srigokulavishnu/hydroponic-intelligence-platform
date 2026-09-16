@@ -1,0 +1,2 @@
+timestamp,plant_id,health,growth,nutrient,ph,ec,action,outcome,notes
+2026-09-14T15:29:38.554362Z,C01_P17,STRESS,G3,NON_OPTIMAL,6.2,1.4,Monitor EC and inspect leaves,Pending,Test observation

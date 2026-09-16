@@ -2,6 +2,7 @@ import cv2
 import os
 import time
 import json
+import argparse
 from datetime import datetime
 import numpy as np
 
@@ -95,7 +96,7 @@ def warp_channel(frame, pts):
         [0, WARP_HEIGHT - 1]], dtype="float32")
     M = cv2.getPerspectiveTransform(rect, dst)
     warped = cv2.warpPerspective(frame, M, (WARP_WIDTH, WARP_HEIGHT))
-    return warped
+    return warped, M
 
 def detect_holes_and_map(frame, pts):
     # 1. Get perspective matrix M to map coordinates later
@@ -200,8 +201,8 @@ def save_config():
         json.dump(data, f, indent=4)
     print(f"[*] Calibration saved to {HOLE_MAP_FILE}")
 
-def save_capture(frame, warped, timestamp):
-    base_dir = os.path.join("datasets", "captures", timestamp)
+def save_capture(frame, warped, timestamp, M):
+    base_dir = os.path.join(CAPTURE_DIR, timestamp)
     crops_dir = os.path.join(base_dir, "plant_crops")
     
     os.makedirs(base_dir, exist_ok=True)
@@ -229,27 +230,63 @@ def save_capture(frame, warped, timestamp):
     saved_count = 0
     failed_count = 0
     
+    M_inv = np.linalg.inv(M)
+    
     for h in calibrated_holes:
         p_id = h['id']
         x, y, w, h_box = h['x'], h['y'], h['w'], h['h']
         
-        # Calculate square dimensions based on the larger side
-        side = max(w, h_box) + 2 * CROP_PADDING
+        # calibrated hole center in warped coordinates
+        center_warped = np.array(
+            [[[x + w / 2.0, y + h_box / 2.0]]],
+            dtype=np.float32
+        )
+
+        # map warped center -> original camera frame
+        center_native = cv2.perspectiveTransform(
+            center_warped, M_inv
+        )
+
+        native_x = int(round(center_native[0, 0, 0]))
+        native_y = int(round(center_native[0, 0, 1]))
+        
+        # Calculate the true native radius of the hole to avoid inflated skewed bounding boxes
+        cw_x = x + w / 2.0
+        cw_y = y + h_box / 2.0
+        
+        pts_warped = np.array([
+            [[cw_x, cw_y]],            # center
+            [[x, cw_y]],               # left edge
+            [[x + w, cw_y]],           # right edge
+            [[cw_x, y]],               # top edge
+            [[cw_x, y + h_box]]        # bottom edge
+        ], dtype=np.float32)
+        
+        pts_native = cv2.perspectiveTransform(pts_warped, M_inv)
+        nc = pts_native[0, 0]
+        
+        dist_left = np.linalg.norm(pts_native[1, 0] - nc)
+        dist_right = np.linalg.norm(pts_native[2, 0] - nc)
+        dist_top = np.linalg.norm(pts_native[3, 0] - nc)
+        dist_bottom = np.linalg.norm(pts_native[4, 0] - nc)
+        
+        max_radius = max(dist_left, dist_right, dist_top, dist_bottom)
+        
+        # Calculate square dimensions based on the true max radius in native coords
+        side = int(np.ceil(2 * max_radius)) + 2 * CROP_PADDING
         half_side = side // 2
         
-        center_x = x + w // 2
-        center_y = y + h_box // 2
-        
-        x1 = max(0, center_x - half_side)
-        y1 = max(0, center_y - half_side)
-        x2 = min(WARP_WIDTH, center_x + half_side)
-        y2 = min(WARP_HEIGHT, center_y + half_side)
+        x1 = max(0, native_x - half_side)
+        y1 = max(0, native_y - half_side)
+        x2 = min(frame.shape[1], native_x + half_side)
+        y2 = min(frame.shape[0], native_y + half_side)
         
         crop_path = os.path.join(crops_dir, f"{p_id}_{timestamp}.jpg")
         
         save_status = "failed"
         if x2 > x1 and y2 > y1:
-            crop = warped[y1:y2, x1:x2]
+            # Crop directly from original high-res frame
+            crop = frame[y1:y2, x1:x2]
             
             # Ensure crop is a perfect square (pad with black if it hits the image edge)
             h_crop, w_crop = crop.shape[:2]
@@ -263,9 +300,7 @@ def save_capture(frame, warped, timestamp):
             # Enhance the crop for visibility and clarity
             crop = enhance_image(crop)
             
-            # Resize to standard dimensions for ML consistency (e.g. 224x224)
-            final_size = 224
-            crop = cv2.resize(crop, (final_size, final_size))
+            # NO RESIZE: Saving at native resolution
             
             success = cv2.imwrite(crop_path, crop)
             if success:
@@ -281,14 +316,26 @@ def save_capture(frame, warped, timestamp):
         plant_records.append({
             "plant_id": p_id,
             "image_path": crop_path.replace("\\", "/"),
-            "bbox": {
+            "bbox_native": {
                 "x": int(x1),
                 "y": int(y1),
-                "w": int(x2 - x1),
-                "h": int(y2 - y1)
+                "w": int(side),
+                "h": int(side)
             },
-            "center_x": int(center_x),
-            "center_y": int(center_y),
+            "center_native": {
+                "x": native_x,
+                "y": native_y
+            },
+            "bbox_warped": {
+                "x": int(x),
+                "y": int(y),
+                "w": int(w),
+                "h": int(h_box)
+            },
+            "center_warped": {
+                "x": float(center_warped[0, 0, 0]),
+                "y": float(center_warped[0, 0, 1])
+            },
             "capture_timestamp": timestamp,
             "save_status": save_status
         })
@@ -376,7 +423,7 @@ def main(camera_url):
         warped_display = None
         if len(roi_points) == 4:
             # Show warped perspective if 4 points are selected
-            warped = warp_channel(frame, roi_points)
+            warped, M = warp_channel(frame, roi_points)
             warped_display = warped.copy()
             
             # Draw calibrated holes
@@ -403,7 +450,7 @@ def main(camera_url):
         elif key == ord('a'):
             if len(roi_points) == 4:
                 print("[*] Auto-detecting holes...")
-                warped = warp_channel(frame, roi_points)
+                warped, M = warp_channel(frame, roi_points)
                 holes = detect_holes_and_map(frame, roi_points)
                 
                 calibrated_holes = []
@@ -440,8 +487,8 @@ def main(camera_url):
         elif key == ord('s'):
             if app_state == "IDLE" and len(roi_points) == 4 and len(calibrated_holes) > 0:
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                warped = warp_channel(frame, roi_points)
-                save_capture(frame, warped, timestamp)
+                warped, M = warp_channel(frame, roi_points)
+                save_capture(frame, warped, timestamp, M)
             else:
                 print("[!] Not ready to capture. Please select ROI (r) -> detect (a) -> save calibration (m).")
 
@@ -455,7 +502,60 @@ def main(camera_url):
     cap.release()
     cv2.destroyAllWindows()
 
+def auto_capture_loop(camera_url, interval_seconds=1800):
+    global roi_points, calibrated_holes, app_state
+    
+    print("[*] Starting headless auto-capture mode...")
+    load_config()
+    
+    if not roi_points or not calibrated_holes:
+        print("[!] Error: No calibration found. Please run interactively first to calibrate.")
+        return
+        
+    print(f"[*] Calibration loaded. Configured to capture every {interval_seconds} seconds.")
+    
+    while True:
+        try:
+            print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Connecting to camera...")
+            cap = cv2.VideoCapture(camera_url)
+            if not cap.isOpened():
+                print(f"[!] Error: Could not connect to {camera_url}. Retrying in 60s...")
+                time.sleep(60)
+                continue
+                
+            # Read a few frames to let the buffer clear and camera auto-adjust exposure
+            ret = False
+            for _ in range(10):
+                ret, frame = cap.read()
+                time.sleep(0.1)
+                
+            if ret and frame is not None:
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                warped, M = warp_channel(frame, roi_points)
+                save_capture(frame, warped, timestamp, M)
+                print(f"[*] Auto-capture successful at {timestamp}.")
+            else:
+                print("[!] Error: Failed to read frame.")
+                
+            cap.release()
+            
+            print(f"[*] Sleeping for {interval_seconds} seconds...")
+            time.sleep(interval_seconds)
+            
+        except Exception as e:
+            print(f"[!] Error in auto-capture loop: {e}")
+            time.sleep(60)
+
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Hydroponic Camera Logger")
+    parser.add_argument("--headless", action="store_true", help="Run continuously in headless auto-capture mode")
+    parser.add_argument("--interval", type=int, default=1800, help="Interval between captures in seconds (default: 1800)")
+    args = parser.parse_args()
+    
     # Please replace the URL below with the actual URL/IP of your hosted server camera
     CAMERA_URL = "rtsp://admin:Techup%40132@192.168.100.35:554/cam/realmonitor?channel=1&subtype=0"
-    main(CAMERA_URL)
+    
+    if args.headless:
+        auto_capture_loop(CAMERA_URL, args.interval)
+    else:
+        main(CAMERA_URL)

@@ -1,0 +1,1101 @@
+{
+    "timestamp": "20260915_111200",
+    "section_id": "S01",
+    "channel_id": "C01",
+    "crop": "Palak",
+    "plant_count": 42,
+    "plants": [
+        {
+            "plant_id": "C01_P01",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P01_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1574,
+                "y": 456,
+                "w": 121,
+                "h": 121
+            },
+            "center_native": {
+                "x": 1634,
+                "y": 516
+            },
+            "bbox_warped": {
+                "x": 150,
+                "y": 4,
+                "w": 142,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 221.0,
+                "y": 17.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P02",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P02_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1662,
+                "y": 484,
+                "w": 127,
+                "h": 127
+            },
+            "center_native": {
+                "x": 1725,
+                "y": 547
+            },
+            "bbox_warped": {
+                "x": 296,
+                "y": 2,
+                "w": 145,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 368.5,
+                "y": 16.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P03",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P03_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1763,
+                "y": 520,
+                "w": 125,
+                "h": 125
+            },
+            "center_native": {
+                "x": 1825,
+                "y": 582
+            },
+            "bbox_warped": {
+                "x": 457,
+                "y": 1,
+                "w": 135,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 524.5,
+                "y": 15.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P04",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P04_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1869,
+                "y": 557,
+                "w": 129,
+                "h": 129
+            },
+            "center_native": {
+                "x": 1933,
+                "y": 621
+            },
+            "bbox_warped": {
+                "x": 618,
+                "y": 0,
+                "w": 134,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 685.0,
+                "y": 14.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P05",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P05_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1972,
+                "y": 595,
+                "w": 128,
+                "h": 128
+            },
+            "center_native": {
+                "x": 2036,
+                "y": 659
+            },
+            "bbox_warped": {
+                "x": 770,
+                "y": 0,
+                "w": 127,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 833.5,
+                "y": 13.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P06",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P06_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2086,
+                "y": 639,
+                "w": 128,
+                "h": 128
+            },
+            "center_native": {
+                "x": 2150,
+                "y": 703
+            },
+            "bbox_warped": {
+                "x": 930,
+                "y": 0,
+                "w": 121,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 990.5,
+                "y": 13.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P07",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P07_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2201,
+                "y": 687,
+                "w": 128,
+                "h": 128
+            },
+            "center_native": {
+                "x": 2265,
+                "y": 751
+            },
+            "bbox_warped": {
+                "x": 1086,
+                "y": 1,
+                "w": 116,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 1144.0,
+                "y": 14.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P08",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P08_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2329,
+                "y": 741,
+                "w": 129,
+                "h": 129
+            },
+            "center_native": {
+                "x": 2393,
+                "y": 805
+            },
+            "bbox_warped": {
+                "x": 1250,
+                "y": 2,
+                "w": 111,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 1305.5,
+                "y": 15.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P09",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P09_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2434,
+                "y": 788,
+                "w": 128,
+                "h": 128
+            },
+            "center_native": {
+                "x": 2498,
+                "y": 852
+            },
+            "bbox_warped": {
+                "x": 1382,
+                "y": 4,
+                "w": 105,
+                "h": 26
+            },
+            "center_warped": {
+                "x": 1434.5,
+                "y": 17.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P10",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P10_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1432,
+                "y": 584,
+                "w": 123,
+                "h": 123
+            },
+            "center_native": {
+                "x": 1493,
+                "y": 645
+            },
+            "bbox_warped": {
+                "x": 82,
+                "y": 61,
+                "w": 146,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 155.0,
+                "y": 75.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P11",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P11_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1529,
+                "y": 618,
+                "w": 126,
+                "h": 126
+            },
+            "center_native": {
+                "x": 1592,
+                "y": 681
+            },
+            "bbox_warped": {
+                "x": 245,
+                "y": 59,
+                "w": 144,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 317.0,
+                "y": 73.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P12",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P12_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1635,
+                "y": 660,
+                "w": 128,
+                "h": 128
+            },
+            "center_native": {
+                "x": 1699,
+                "y": 724
+            },
+            "bbox_warped": {
+                "x": 418,
+                "y": 58,
+                "w": 140,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 488.0,
+                "y": 72.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P13",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P13_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1725,
+                "y": 695,
+                "w": 130,
+                "h": 130
+            },
+            "center_native": {
+                "x": 1790,
+                "y": 760
+            },
+            "bbox_warped": {
+                "x": 558,
+                "y": 57,
+                "w": 137,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 626.5,
+                "y": 71.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P14",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P14_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1828,
+                "y": 736,
+                "w": 131,
+                "h": 131
+            },
+            "center_native": {
+                "x": 1893,
+                "y": 801
+            },
+            "bbox_warped": {
+                "x": 710,
+                "y": 56,
+                "w": 132,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 776.0,
+                "y": 70.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P15",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P15_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1949,
+                "y": 784,
+                "w": 132,
+                "h": 132
+            },
+            "center_native": {
+                "x": 2015,
+                "y": 850
+            },
+            "bbox_warped": {
+                "x": 882,
+                "y": 55,
+                "w": 127,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 945.5,
+                "y": 69.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P16",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P16_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2058,
+                "y": 829,
+                "w": 133,
+                "h": 133
+            },
+            "center_native": {
+                "x": 2124,
+                "y": 895
+            },
+            "bbox_warped": {
+                "x": 1029,
+                "y": 55,
+                "w": 122,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 1090.0,
+                "y": 68.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P17",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P17_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2182,
+                "y": 882,
+                "w": 133,
+                "h": 133
+            },
+            "center_native": {
+                "x": 2248,
+                "y": 948
+            },
+            "bbox_warped": {
+                "x": 1190,
+                "y": 55,
+                "w": 116,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 1248.0,
+                "y": 68.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P18",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P18_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2299,
+                "y": 933,
+                "w": 132,
+                "h": 132
+            },
+            "center_native": {
+                "x": 2365,
+                "y": 999
+            },
+            "bbox_warped": {
+                "x": 1336,
+                "y": 55,
+                "w": 109,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 1390.5,
+                "y": 68.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P19",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P19_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1424,
+                "y": 740,
+                "w": 125,
+                "h": 125
+            },
+            "center_native": {
+                "x": 1486,
+                "y": 802
+            },
+            "bbox_warped": {
+                "x": 218,
+                "y": 108,
+                "w": 143,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 289.5,
+                "y": 121.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P20",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P20_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1624,
+                "y": 826,
+                "w": 131,
+                "h": 131
+            },
+            "center_native": {
+                "x": 1689,
+                "y": 891
+            },
+            "bbox_warped": {
+                "x": 541,
+                "y": 105,
+                "w": 138,
+                "h": 29
+            },
+            "center_warped": {
+                "x": 610.0,
+                "y": 119.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P21",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P21_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1721,
+                "y": 870,
+                "w": 133,
+                "h": 133
+            },
+            "center_native": {
+                "x": 1787,
+                "y": 936
+            },
+            "bbox_warped": {
+                "x": 689,
+                "y": 105,
+                "w": 134,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 756.0,
+                "y": 119.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P22",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P22_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1835,
+                "y": 920,
+                "w": 136,
+                "h": 136
+            },
+            "center_native": {
+                "x": 1903,
+                "y": 988
+            },
+            "bbox_warped": {
+                "x": 854,
+                "y": 104,
+                "w": 131,
+                "h": 29
+            },
+            "center_warped": {
+                "x": 919.5,
+                "y": 118.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P23",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P23_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1959,
+                "y": 977,
+                "w": 135,
+                "h": 135
+            },
+            "center_native": {
+                "x": 2026,
+                "y": 1044
+            },
+            "bbox_warped": {
+                "x": 1023,
+                "y": 104,
+                "w": 123,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 1084.5,
+                "y": 118.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P24",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P24_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2076,
+                "y": 1028,
+                "w": 139,
+                "h": 139
+            },
+            "center_native": {
+                "x": 2145,
+                "y": 1097
+            },
+            "bbox_warped": {
+                "x": 1174,
+                "y": 103,
+                "w": 122,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 1235.0,
+                "y": 117.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P25",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P25_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2190,
+                "y": 1084,
+                "w": 137,
+                "h": 137
+            },
+            "center_native": {
+                "x": 2258,
+                "y": 1152
+            },
+            "bbox_warped": {
+                "x": 1317,
+                "y": 104,
+                "w": 114,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 1374.0,
+                "y": 117.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P26",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P26_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1289,
+                "y": 854,
+                "w": 128,
+                "h": 128
+            },
+            "center_native": {
+                "x": 1353,
+                "y": 918
+            },
+            "bbox_warped": {
+                "x": 151,
+                "y": 157,
+                "w": 147,
+                "h": 29
+            },
+            "center_warped": {
+                "x": 224.5,
+                "y": 171.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P27",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P27_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1378,
+                "y": 898,
+                "w": 128,
+                "h": 128
+            },
+            "center_native": {
+                "x": 1442,
+                "y": 962
+            },
+            "bbox_warped": {
+                "x": 302,
+                "y": 157,
+                "w": 142,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 373.0,
+                "y": 171.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P28",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P28_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1481,
+                "y": 951,
+                "w": 132,
+                "h": 132
+            },
+            "center_native": {
+                "x": 1547,
+                "y": 1017
+            },
+            "bbox_warped": {
+                "x": 474,
+                "y": 157,
+                "w": 140,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 544.0,
+                "y": 171.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P29",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P29_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1591,
+                "y": 1008,
+                "w": 133,
+                "h": 133
+            },
+            "center_native": {
+                "x": 1657,
+                "y": 1074
+            },
+            "bbox_warped": {
+                "x": 645,
+                "y": 157,
+                "w": 135,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 712.5,
+                "y": 171.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P30",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P30_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1690,
+                "y": 1059,
+                "w": 135,
+                "h": 135
+            },
+            "center_native": {
+                "x": 1757,
+                "y": 1126
+            },
+            "bbox_warped": {
+                "x": 793,
+                "y": 157,
+                "w": 131,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 858.5,
+                "y": 171.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P31",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P31_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1805,
+                "y": 1116,
+                "w": 140,
+                "h": 140
+            },
+            "center_native": {
+                "x": 1875,
+                "y": 1186
+            },
+            "bbox_warped": {
+                "x": 957,
+                "y": 156,
+                "w": 129,
+                "h": 29
+            },
+            "center_warped": {
+                "x": 1021.5,
+                "y": 170.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P32",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P32_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1912,
+                "y": 1170,
+                "w": 140,
+                "h": 140
+            },
+            "center_native": {
+                "x": 1982,
+                "y": 1240
+            },
+            "bbox_warped": {
+                "x": 1099,
+                "y": 156,
+                "w": 124,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 1161.0,
+                "y": 170.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P33",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P33_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2032,
+                "y": 1230,
+                "w": 139,
+                "h": 139
+            },
+            "center_native": {
+                "x": 2101,
+                "y": 1299
+            },
+            "bbox_warped": {
+                "x": 1251,
+                "y": 156,
+                "w": 117,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 1309.5,
+                "y": 169.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P34",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P34_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2153,
+                "y": 1289,
+                "w": 144,
+                "h": 144
+            },
+            "center_native": {
+                "x": 2225,
+                "y": 1361
+            },
+            "bbox_warped": {
+                "x": 1411,
+                "y": 155,
+                "w": 89,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 1455.5,
+                "y": 169.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P35",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P35_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1144,
+                "y": 1017,
+                "w": 124,
+                "h": 124
+            },
+            "center_native": {
+                "x": 1206,
+                "y": 1079
+            },
+            "bbox_warped": {
+                "x": 112,
+                "y": 221,
+                "w": 141,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 182.5,
+                "y": 234.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P36",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P36_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1235,
+                "y": 1071,
+                "w": 130,
+                "h": 130
+            },
+            "center_native": {
+                "x": 1300,
+                "y": 1136
+            },
+            "bbox_warped": {
+                "x": 277,
+                "y": 221,
+                "w": 142,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 348.0,
+                "y": 235.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P37",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P37_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1327,
+                "y": 1127,
+                "w": 130,
+                "h": 130
+            },
+            "center_native": {
+                "x": 1392,
+                "y": 1192
+            },
+            "bbox_warped": {
+                "x": 433,
+                "y": 222,
+                "w": 137,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 501.5,
+                "y": 235.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P38",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P38_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1425,
+                "y": 1186,
+                "w": 135,
+                "h": 135
+            },
+            "center_native": {
+                "x": 1492,
+                "y": 1253
+            },
+            "bbox_warped": {
+                "x": 593,
+                "y": 222,
+                "w": 137,
+                "h": 28
+            },
+            "center_warped": {
+                "x": 661.5,
+                "y": 236.0
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P39",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P39_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1643,
+                "y": 1306,
+                "w": 138,
+                "h": 138
+            },
+            "center_native": {
+                "x": 1712,
+                "y": 1375
+            },
+            "bbox_warped": {
+                "x": 914,
+                "y": 221,
+                "w": 127,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 977.5,
+                "y": 234.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P40",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P40_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1768,
+                "y": 1375,
+                "w": 140,
+                "h": 140
+            },
+            "center_native": {
+                "x": 1838,
+                "y": 1445
+            },
+            "bbox_warped": {
+                "x": 1083,
+                "y": 220,
+                "w": 122,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 1144.0,
+                "y": 233.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P41",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P41_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 1870,
+                "y": 1429,
+                "w": 142,
+                "h": 142
+            },
+            "center_native": {
+                "x": 1941,
+                "y": 1500
+            },
+            "bbox_warped": {
+                "x": 1214,
+                "y": 219,
+                "w": 118,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 1273.0,
+                "y": 232.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        },
+        {
+            "plant_id": "C01_P42",
+            "image_path": "c:/Users/Gokul/Documents/projects/Hydrophonics/hydroponic-intelligence-platform/data_collection/datasets/captures/20260915_111200/plant_crops/C01_P42_20260915_111200.jpg",
+            "bbox_native": {
+                "x": 2000,
+                "y": 1495,
+                "w": 145,
+                "h": 145
+            },
+            "center_native": {
+                "x": 2072,
+                "y": 1567
+            },
+            "bbox_warped": {
+                "x": 1370,
+                "y": 217,
+                "w": 112,
+                "h": 27
+            },
+            "center_warped": {
+                "x": 1426.0,
+                "y": 230.5
+            },
+            "capture_timestamp": "20260915_111200",
+            "save_status": "saved"
+        }
+    ]
+}

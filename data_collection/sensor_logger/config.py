@@ -5,7 +5,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).parent.absolute()
 
 API_URL = "http://192.168.100.131:5000/api/data"
-COLLECTION_INTERVAL = 60
+COLLECTION_INTERVAL = 1800
 REQUEST_TIMEOUT = 10
 
 # Directory paths

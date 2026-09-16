@@ -1,0 +1,140 @@
+[
+  {
+    "id": "crop_001",
+    "category": "crop_identity",
+    "topic": "identity",
+    "crop": "Palak",
+    "scientific_name": "Spinacia oleracea",
+    "hydroponic_system": "NFT",
+    "description": "Palak, commonly known as spinach, is a leafy green vegetable cultivated for its edible leaves. It is a popular crop for hydroponic systems due to its relatively fast growth cycle.",
+    "keywords": [
+      "Palak",
+      "Spinach",
+      "Spinacia oleracea",
+      "NFT",
+      "Leafy green"
+    ],
+    "source_type": "project_reference",
+    "source": "Project specification"
+  },
+  {
+    "id": "crop_002",
+    "category": "crop_characteristics",
+    "topic": "characteristics",
+    "crop": "Palak",
+    "scientific_name": "Spinacia oleracea",
+    "hydroponic_system": "NFT",
+    "description": "A fast-growing, cool-season crop. The plant forms a central rosette of leaves and can be harvested either as baby leaf or fully mature.",
+    "keywords": [
+      "Rosette",
+      "Cool-season",
+      "Growth cycle",
+      "Baby leaf"
+    ],
+    "source_type": "project_reference",
+    "source": "Project specification"
+  },
+  {
+    "id": "crop_003",
+    "category": "visual_characteristics",
+    "topic": "visual",
+    "crop": "Palak",
+    "scientific_name": "Spinacia oleracea",
+    "hydroponic_system": "NFT",
+    "description": "Leaves are typically dark green, broad, and can be smooth or savoyed (crinkled) depending on the variety. The leaf canopy expands laterally as the plant matures.",
+    "keywords": [
+      "Dark green",
+      "Broad leaves",
+      "Savoyed",
+      "Canopy"
+    ],
+    "source_type": "project_reference",
+    "source": "Project specification"
+  },
+  {
+    "id": "crop_004",
+    "category": "nft_cultivation_context",
+    "topic": "nft_system",
+    "crop": "Palak",
+    "scientific_name": "Spinacia oleracea",
+    "hydroponic_system": "NFT",
+    "description": "In Nutrient Film Technique (NFT), Palak is grown in channels with a shallow, continuous stream of nutrient solution. Root development is critical and is heavily influenced by flow rate and oxygenation.",
+    "keywords": [
+      "NFT",
+      "Channels",
+      "Nutrient flow",
+      "Root development",
+      "Oxygenation"
+    ],
+    "source_type": "project_reference",
+    "source": "Project specification"
+  },
+  {
+    "id": "crop_005",
+    "category": "environmental_context",
+    "topic": "environment",
+    "crop": "Palak",
+    "scientific_name": "Spinacia oleracea",
+    "hydroponic_system": "NFT",
+    "description": "As a cool-weather crop, it prefers moderate environmental conditions. Excessive heat can cause bolting (premature flowering) and negatively affect leaf quality. It requires adequate lighting but can tolerate partial shade.",
+    "keywords": [
+      "Cool-weather",
+      "Bolting",
+      "Temperature stress",
+      "Lighting"
+    ],
+    "source_type": "project_reference",
+    "source": "Project specification"
+  },
+  {
+    "id": "crop_006",
+    "category": "terminology",
+    "topic": "synonyms",
+    "crop": "Palak",
+    "scientific_name": "Spinacia oleracea",
+    "hydroponic_system": "NFT",
+    "description": "Also commonly referred to as Indian Spinach or simply Spinach. In culinary contexts, it is widely used in South Asian cuisine.",
+    "keywords": [
+      "Indian Spinach",
+      "Spinach",
+      "Synonyms"
+    ],
+    "source_type": "project_reference",
+    "source": "Project specification"
+  },
+  {
+    "id": "crop_007",
+    "category": "plant_observation",
+    "topic": "observation",
+    "crop": "Palak",
+    "scientific_name": "Spinacia oleracea",
+    "hydroponic_system": "NFT",
+    "description": "Visual observation of the crop often focuses on leaf color, canopy size, and structural integrity. Yellowing or wilting leaves may indicate stress, nutrient imbalance, or disease.",
+    "keywords": [
+      "Observation",
+      "Leaf color",
+      "Canopy size",
+      "Wilting",
+      "Stress indicators"
+    ],
+    "source_type": "project_reference",
+    "source": "Project specification"
+  },
+  {
+    "id": "crop_008",
+    "category": "harvest_terminology",
+    "topic": "maturity",
+    "crop": "Palak",
+    "scientific_name": "Spinacia oleracea",
+    "hydroponic_system": "NFT",
+    "description": "Harvesting can be 'cut-and-come-again', where outer mature leaves are picked to allow inner leaves to continue growing, or a single whole-plant harvest. Maturity is generally gauged by leaf size and rosette fullness.",
+    "keywords": [
+      "Harvest",
+      "Maturity",
+      "Cut-and-come-again",
+      "Whole-plant harvest"
+    ],
+    "source_type": "project_reference",
+    "source": "Project specification"
+  }
+]
